@@ -1,13 +1,5 @@
 
 <?php include 'includes/header.php' ?>
-<?php
-if(isset($_GET['day']))
-{
-  $day = $_GET['day']; // from query sring
-}else{
-  $day= date('l'); // fromthe system clock
-}
-?>
 <?php include 'includes/config.php' ?>
 
   <hr class="divider">
@@ -17,15 +9,13 @@ if(isset($_GET['day']))
   <hr class="divider">
   <div class="row">
     <div class="col-lg-6">
-
+      <img class="img-fluid mb-4 mb-lg-0" src="img/eng.png" alt="">
     </div>
     <div class="col-lg-6">
-      <p> Daily page<p>
-        <p>Current contents of the variable day: <?=$day?> </p>
-      <p> <a href="?day=Monday">Monday</a></p>
-      <p> <a href="?day=Tuesday">Tuesday</a></p>
-      <p> <a href="?day=Wednesday">Wedneday</a></p>
-
+      <p> Clever stuff about widgets goes here<p>
+      <p> Clever stuff about widgets goes here<p>
+      <p> Clever stuff about widgets goes here<p>
+      <p> Clever stuff about widgets goes here<p>
       </div>
   </div>
 
