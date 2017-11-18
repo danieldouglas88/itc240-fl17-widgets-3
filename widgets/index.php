@@ -1,6 +1,6 @@
-
-<?php include 'includes/header.php' ?>
 <?php include 'includes/config.php' ?>
+<?php include 'includes/common.php'; ?>
+<?php get_header(); ?>
 
   <hr class="divider">
   <h2 class="text-center text-lg text-uppercase my-0">Welcome to the
@@ -19,4 +19,4 @@
       </div>
   </div>
 
-<?php include 'includes/footer.php' ?>
+<?php get_footer(); ?>

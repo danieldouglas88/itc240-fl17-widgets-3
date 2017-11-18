@@ -1,26 +1,14 @@
 <?php
-//common.php - a place to store our favorite functions
-
-// the following function's used for error handling
-function myerror($myFile, $myLine, $errorMsg)
-{
-    if(defined('DEBUG') && DEBUG)
-    {
-       echo "Error in file: <b>" . $myFile . "</b> on line: <b>" . $myLine . "</b><br />";
-       echo "Error Message: <b>" . $errorMsg . "</b><br />";
-       die();
-    }else{
-		echo "I'm sorry, we have encountered an error.  Would you like to buy some socks?";
-		die();
-    }
-}
+/*
+common.php - a place to store our favorite functions
+*/
 
 
 /*
 Used for error handling
 
 /*
- loads header include file from theme folder
+ loads header include file from theme folder 
 
 */
 
@@ -30,23 +18,23 @@ function get_header($file=''){
     if($file == ''){//load included file
         if(!$header_loaded)
         {//header loads first time
-            $file = 'header.php';
+            $file = 'header.php'; 
             $header_loaded = true;
         }else{
             $file = 'footer.php';
         }
-
+           
     }
-
+    
     $file = $config->physical_path . '/themes/' . $config->theme . '/' . $file;
-
+    
     if(file_exists($file)){
         include $file;
     }else{
         myerror(__FILE__,__LINE__,'include file not found: ' . $file);
     }
-
-
+    
+    
 }#end get_header()
 
 function get_footer()
@@ -54,3 +42,12 @@ function get_footer()
     global $config;
     get_header();
 }#get_footer() is same function, run second time with footer file
+
+
+
+
+
+
+
+
+

@@ -25,6 +25,18 @@ $config = new stdClass;
 // Constant with current page name
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
+
+//START NEW THEME STUFF
+$sub_folder = 'widgets';//change to 'widgets' or 'sprockets' etc.
+
+//add subfolder, in this case 'fidgets' if not loaded to root:
+$config->physical_path = $_SERVER["DOCUMENT_ROOT"] . '/' . $sub_folder;
+$config->virtual_path = 'http://' . $_SERVER["HTTP_HOST"] . '/' . $sub_folder;
+$config->theme = 'BusinessCasual';//sub folder to themes
+
+//END NEW THEME STUFF
+
+
 $config2 = "Welcome to our site.";
 $banner = "Structrual and Civil Engineering";
 
@@ -48,5 +60,11 @@ if (THIS_PAGE == 'index.php')
 }else{
   $config2 = "Welcome to " . THIS_PAGE;
 }
+
+
+//START NEW THEME STUFF
+//creates theme virtual path for theme assets, JS, CSS, images
+$config->theme_virtual = $config->virtual_path . '/themes/' . $config->theme . '/';
+//END NEW THEME STUFF
 
 ?>
