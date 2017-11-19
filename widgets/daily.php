@@ -1,5 +1,5 @@
-
-<?php include 'includes/header.php' ?>
+<?php include 'includes/config.php' ?>
+<?php get_header(); ?>
 <?php
 if(isset($_GET['day']))
 {
@@ -8,7 +8,6 @@ if(isset($_GET['day']))
   $day= date('l'); // fromthe system clock
 }
 ?>
-<?php include 'includes/config.php' ?>
 
   <hr class="divider">
   <h2 class="text-center text-lg text-uppercase my-0">Welcome to the
@@ -29,4 +28,4 @@ if(isset($_GET['day']))
       </div>
   </div>
 
-<?php include 'includes/footer.php' ?>
+<?php get_footer(); ?>

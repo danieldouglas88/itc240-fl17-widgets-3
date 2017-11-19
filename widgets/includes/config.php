@@ -14,7 +14,7 @@ date_default_timezone_set("America/Los_Angeles");
 
 //add includes file reference here:
 include 'credentials.php'; // database credentials here
-//include 'common.php'; //favoirte functions here
+include 'common.php'; //favoirte functions here
 
 //echo DB_HOST;
 //die;

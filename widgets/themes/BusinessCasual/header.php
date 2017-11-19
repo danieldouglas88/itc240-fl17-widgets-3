@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?=$config->title?></title>
+    <title><?=$config2?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?=$config->theme_virtual?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,8 +24,8 @@
 
   <body>
 
-    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block"><?=$config->banner?></div>
-    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block"></div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block"><?=$banner?></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
@@ -52,7 +52,7 @@
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="daily.php">Daily</a>
-            </li>  
+            </li>
           </ul>
         </div>
       </div>
@@ -61,10 +61,3 @@
     <div class="container">
         <div class="bg-faded p-4 my-4">
       <!-- header ends here -->
-        
-        
-        
-        
-        
-        
-        

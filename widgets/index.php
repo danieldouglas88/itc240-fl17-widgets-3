@@ -1,5 +1,4 @@
 <?php include 'includes/config.php' ?>
-<?php include 'includes/common.php'; ?>
 <?php get_header(); ?>
 
   <hr class="divider">
