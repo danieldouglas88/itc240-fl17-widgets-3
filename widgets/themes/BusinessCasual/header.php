@@ -1,3 +1,30 @@
+<?php
+if (THIS_PAGE == 'index.php')
+{
+  $config2 = "Welcome to the home page.";
+  $banner = "Structrual and Civil Engineering: Welcome Home";
+
+} elseif (THIS_PAGE == 'customers.php') {
+  $config2 = "Welcome to the Customers page.";
+  $banner = "Structrual and Civil Engineering: Customers!";
+
+} elseif (THIS_PAGE == 'appointment.php') {
+  $config2 = "Welcome to the Appointment page.";
+  $banner = "Structrual and Civil Engineering: Widget Appointments";
+
+} elseif (THIS_PAGE == 'contact.php') {
+  $config2 = "Welcome to the Contact page";
+  $banner = "Structrual and Civil Engineering: Contact us";
+
+} elseif (THIS_PAGE == 'daily.php') {
+  $config2 = "Welcome to the Daily page";
+  $banner = "Structrual and Civil Engineering: Daily stuff!";
+
+}else{
+  $config2 = "Welcome to " . THIS_PAGE;
+    $banner = "Structrual and Civil Engineering: Boop the snoop!";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +51,7 @@
 
   <body>
 
-    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block"></div>
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Widgets Corp.</div>
     <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block"><?=$banner?></div>
 
     <!-- Navigation -->

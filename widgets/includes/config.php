@@ -36,7 +36,6 @@ $config->theme = 'BusinessCasual';//sub folder to themes
 
 //END NEW THEME STUFF
 
-
 $config2 = "Welcome to our site.";
 $banner = "Structrual and Civil Engineering";
 
